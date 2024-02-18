@@ -1,0 +1,22 @@
+.cll {
+    border: 2px solid black;
+    padding: 3px 10px;
+    width: 70px;
+    text-align: center;
+}
+
+.hghtOdd {
+    height: 50px;
+}
+
+.tblbox {
+    border-collapse: collapse;
+    width: auto;
+}
+
+@media (min-width: 500px) {
+    .box-container {
+        display: flex;
+        /* justify-content: flex-end; */
+    }
+}

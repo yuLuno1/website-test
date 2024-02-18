@@ -1,0 +1,13 @@
+Private Sub Worksheet_SelectionChange(ByVal Target As Range)
+     
+
+    '■特定セルで起動する場合(セルE10)
+    If Target.Address = "$E$10" Then
+        MsgBox "特定セル"
+    End If
+    '■特定セル範囲で起動する場合(セルのC4～E5)
+    If Not Intersect(Target, Range("C4:D5")) Is Nothing Then
+        MsgBox "特定セル範囲"
+    End If
+    
+End Sub
